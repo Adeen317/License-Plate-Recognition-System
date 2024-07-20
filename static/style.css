@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://sacmi.com/SacmiCorporate/media/Corporate/Default%20Pict/CTLC_linea-completa-(2).jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-size: 28px;
+    color: #ffffff !important;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-size: 18px;
+    border-radius: 25px;
+    padding: 5px 15px;
+    color: #ffffff !important;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #555;
+    color: #ffffff !important;
+}
+
+.content {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2 {
+    color: #ffffff;
+}
+
+form {
+    margin: 20px 0;
+}
+
+input[type="file"] {
+    padding: 10px;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-custom {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #333333;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-custom:hover {
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    margin-top: 20px;
+}
+
+.detected-text {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.dt{
+    text-align: center;
+    font-weight: bold;
+    font-size: 4rem;
+}
