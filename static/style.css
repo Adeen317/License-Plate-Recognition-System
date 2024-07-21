@@ -96,13 +96,11 @@ img {
 }
 
 .detected-text {
-    text-align: center;
     font-weight: bold;
     font-size: 2rem;
 }
 
 .dt{
-    text-align: center;
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 3rem;
 }
