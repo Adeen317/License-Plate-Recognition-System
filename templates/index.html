@@ -38,21 +38,27 @@
             </div>
             <button type="submit" class="btn btn-custom btn-primary">Upload Image</button>
         </form>
-        {% if text %}
+        <!--{% if text %}
         <div class="mt-4">
             <h2 class="dt">Detected Text</h2>
             <p class="detected-text">{{ text }}</p>
         </div>
-        {% endif %}
+        {% endif %}-->
         {% if original_image %}
         <div class="row mt-5">
             <div class="col-md-6">
                 <h2>Uploaded Image</h2>
                 <img src="{{ url_for('static', filename='uploads/' + original_image) }}" alt="Uploaded Image" class="img-fluid rounded">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 mt-4">
                 <h2>Processed Image</h2>
-                <img src="{{ url_for('static', filename='uploads/' + cropped_image) }}" alt="Processed Image" class="img-fluid rounded">
+                <img src="{{ url_for('static', filename='uploads/processed_' + original_image) }}" alt="Processed Image" class="img-fluid rounded">
+                {% if text %}
+                <div class="mt-4">
+                    <h2>Detected Text</h2>
+                    <p class="detected-text">{{ text }}</p>
+                </div>
+                {% endif %}
             </div>
         </div>
         {% endif %}
