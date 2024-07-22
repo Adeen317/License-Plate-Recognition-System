@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-transparent">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">L.P.N.R.S</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -31,19 +31,13 @@
         </div>
     </nav>
     <div class="container content mt-5">
-        <h1>License Plate Number Recognition System</h1>
+        <h1 class="lc">License Plate Number Recognition System</h1>
         <form method="post" enctype="multipart/form-data" class="mt-4">
             <div class="form-group">
                 <input type="file" name="file" class="form-control-file" accept="image/*" required>
             </div>
-            <button type="submit" class="btn btn-custom btn-primary">Upload Image</button>
+            <button type="submit" class="btn btn-custom">Upload Image</button>
         </form>
-        <!--{% if text %}
-        <div class="mt-4">
-            <h2 class="dt">Detected Text</h2>
-            <p class="detected-text">{{ text }}</p>
-        </div>
-        {% endif %}-->
         {% if original_image %}
         <div class="row mt-5">
             <div class="col-md-6">
