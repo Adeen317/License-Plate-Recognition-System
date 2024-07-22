@@ -1,106 +1,68 @@
 body {
-    font-family: Arial, sans-serif;
-    background: url('https://github.com/Adeen317/License-Plate-Recognition-System/blob/main/static/image.jpg?raw=true') no-repeat center center fixed;
-    background-size: cover;
-    color: #ffffff;
+    position: relative;
+    overflow: auto;
+    color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
     margin: 0;
-    padding: 0;
 }
 
-.navbar {
-    margin-bottom: 20px;
-    border-bottom: 2px solid #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    position: sticky;
+body::before {
+    content: '';
+    position: fixed;
     top: 0;
-    z-index: 1000;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://github.com/Adeen317/License-Plate-Recognition-System/blob/main/static/image.jpg?raw=true");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: blur(8px);
+    z-index: -1;
 }
 
-.navbar-transparent {
-    background: transparent !important;
-    border: none;
-}
-.navbar-dark .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 0.75);
-}
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link:focus {
-    color: rgba(255, 255, 255, 1);
-}
-
-.navbar-brand {
-    font-size: 28px;
-    color: #ffffff !important;
-    font-weight: bold;
-}
-
-.nav-link {
-    font-size: 18px;
-    border-radius: 25px;
-    padding: 5px 30px;
-    color: #ffffff !important;
-    transition: background-color 0.3s, color 0.3s;
+.navbar-brand, .nav-link {
+    color: #f8f9fa !important;
+    transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-    background-color: #555;
-    color: #ffffff !important;
+    color: #cccccc !important;
 }
 
-.content {
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
-
-h1, h2 {
-    color: #ffffff;
-}
-
-form {
-    margin: 20px 0;
-}
-
-input[type="file"] {
-    padding: 10px;
-    background-color: #2a2a2a;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
+.content h1, .content h2 {
+    color: #f8f9fa;
+    margin-bottom: 20px;
 }
 
 .btn-custom {
-    padding: 10px 20px;
-    background-color: #ffffff;
-    color: #333333;
-    border: none;
-    cursor: pointer;
-    border-radius: 25px;
-    font-weight: bold;
-    text-transform: uppercase;
+    background-color: #daecff;
+    border-color: #daecff;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .btn-custom:hover {
-    background-color: #ffffff;
-    color: #ffffff;
+    background-color: #85befa;
+    border-color: #85befa;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+.form-control-file {
     margin-top: 20px;
 }
 
-.detected-text {
-    font-weight: bold;
-    font-size: 2rem;
+.img-fluid {
+    margin-top: 20px;
+    border: 1px solid #444;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.dt{
+.detected-text {
+    font-size: 2rem;
     font-weight: bold;
-    font-size: 3rem;
+    color: #a7fe69;
+}
+
+.lc{
+    align-items: center;
 }
